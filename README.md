@@ -1,27 +1,42 @@
-# CardGame
+# Angular-Casino
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.4.
+I converted an old Java school project into an Angular2 project for fun. The original project was a Swing based blackjack game using LinkedLists inteded to teach students about classes, objects, and, of course, LinkedLists. 
+I got the idea when tutoring other students on the project, I was tired of doing the same Java project so I decided to code alongside them using a web technology that interested me. This version of the project is more or less the same project, I made a Card class, Link class, and a CardList class, with the big difference being that it's all Typescript, HTML and CSS. I also added a PokerChips class that keeps track of in-game winnings. 
 
-## Development server
+Really fun project, still not complete, but this is a working version of it. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Getting Started
 
-## Code scaffolding
+To play the game go [here](afryingpan.github.io/Angular-Casino)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Built With
 
-## Build
+* [Angular2](angular.io)
+* HTML5
+* CSS3 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Authors
 
-## Running unit tests
+* **[Christopher Gomez]**(https://github.com/afryingpan)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## License
 
-## Running end-to-end tests
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Acknowledgments
 
-## Further help
+Thank you to the following people:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* [Chris Ferguson](chris.ferguson@canyons.edu) - Professor who gave the original project and basis for the idea
+* [Ian Lunn](github.com/IanLunn) - For his amazing [Hover.css](http://ianlunn.github.io/Hover/)
+* [Anika Henke](https://github.com/selfthinker) - For her amazing [CSS Playing Cards](http://selfthinker.github.io/CSS-Playing-Cards/). 
+
+## TODO
+
+* Fix the betting system - Currently you can only bet $25. I will add a modal that allows you to increase your bet in increments of $25. 
+* Add a menu - Start game, New game, Help, About. Common menu options, etc.
+* Rotate the dealers cards to be facing him, rather than the player.
+* Add more variations of playing card games - Poker, 31, Rummy, Solataire, etc.
+* Autosave - Player should have the same amount of money they had when they closed the window and return.
+* Game Over - Penalty or event when you lose all your money.
+* Bug fixes and small improvements
