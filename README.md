@@ -1,6 +1,7 @@
 # Angular-Casino
 
 I converted an old Java school project into an Angular2 project for fun. The original project was a Swing based blackjack game using LinkedLists inteded to teach students about classes, objects, and, of course, LinkedLists. 
+
 I got the idea when tutoring other students on the project, I was tired of doing the same Java project so I decided to code alongside them using a web technology that interested me. This version of the project is more or less the same project, I made a Card class, Link class, and a CardList class, with the big difference being that it's all Typescript, HTML and CSS. I also added a PokerChips class that keeps track of in-game winnings. 
 
 Really fun project, still not complete, but this is a working version of it. 
