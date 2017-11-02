@@ -15,9 +15,9 @@ To play the game go [here](afryingpan.github.io/Angular-Casino)
 * HTML5
 * CSS3 
 
-## Authors
+## Author
 
-* [Christopher Gomez](https://github.com/afryingpan)
+[Christopher Gomez](https://github.com/afryingpan)
 
 ## License
 
