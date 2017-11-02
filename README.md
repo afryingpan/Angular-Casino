@@ -17,7 +17,7 @@ To play the game go [here](afryingpan.github.io/Angular-Casino)
 
 ## Authors
 
-* **[Christopher Gomez]**(https://github.com/afryingpan)
+* [Christopher Gomez](https://github.com/afryingpan)
 
 ## License
 
