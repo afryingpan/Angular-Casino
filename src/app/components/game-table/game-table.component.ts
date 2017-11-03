@@ -51,6 +51,10 @@ export class GameTableComponent {
 			return;
 		}
 
+		if (this.game.playing === true) {
+			return;
+		}
+
 		// Clear variables for next game
 		this.playerHand = null;
 		this.dealerHand = null;
