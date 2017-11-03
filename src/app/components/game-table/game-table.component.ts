@@ -41,6 +41,10 @@ export class GameTableComponent {
 
 	public nextGame(): void {
 
+		if (this.game.playing === true) {
+			return;
+		}
+
 		// if their bet isn't set make them set it
 		if (this.betSet === false || this.game.playerBet === 0) {
 			if (this.betEmphasis === 'hvr-grow-shadow animated shake') {
@@ -48,10 +52,6 @@ export class GameTableComponent {
 				return;
 			}
 			this.betEmphasis = 'hvr-grow-shadow animated shake';
-			return;
-		}
-
-		if (this.game.playing === true) {
 			return;
 		}
 
