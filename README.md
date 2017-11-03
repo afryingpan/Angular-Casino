@@ -34,7 +34,7 @@ Thank you to the following people:
 
 ## TODO
 
-* Fix the betting system - Currently you can only bet $25. I will add a modal that allows you to increase your bet in increments of $25. 
+* Fix the betting system - Currently you can only bet $25. Need to add a modal that allows you to increase your bet in increments of $25. 
 * Add Animations for dealing cards.
 * Add a menu - Start game, New game, Help, About. Common menu options, etc.
 * Rotate the dealers cards to be facing him, rather than the player.
