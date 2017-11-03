@@ -8,7 +8,7 @@ Really fun project, still not complete, but this is a working version of it.
 
 ## Getting Started
 
-To play the game go [here](afryingpan.github.io/Angular-Casino)
+To play the game go [here](https://afryingpan.github.io/Angular-Casino/)
 
 ## Built With
 
