@@ -12,11 +12,7 @@ import { Chips } from '../../classes/MoneyChips';
 	selector: 'app-game-table',
 	templateUrl: './game-table.component.html',
 	styleUrls: [
-		'./game-table.component.css',
-		'./cards.css',
-		'./chips.css',
-		'./animate.css',
-		'./hover.css'
+		'./game-table.component.css'
 	]
 })
 export class GameTableComponent {
