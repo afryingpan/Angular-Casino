@@ -35,9 +35,10 @@ Thank you to the following people:
 ## TODO
 
 * Fix the betting system - Currently you can only bet $25. I will add a modal that allows you to increase your bet in increments of $25. 
+* Add Animations for dealing cards.
 * Add a menu - Start game, New game, Help, About. Common menu options, etc.
 * Rotate the dealers cards to be facing him, rather than the player.
 * Add more variations of playing card games - Poker, 31, Rummy, Solataire, etc.
 * Autosave - Player should have the same amount of money they had when they closed the window and return.
 * Game Over - Penalty or event when you lose all your money.
-* Bug fixes and small improvements
+* Bug fixes, small improvements, visual improvements.
