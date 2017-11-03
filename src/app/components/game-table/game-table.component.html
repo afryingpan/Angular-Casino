@@ -1,0 +1,117 @@
+<!-- Green Background -->
+<div class='table'>
+
+  <!-- Notification for busts/wins -->
+  <simple-notifications [options]="options"></simple-notifications>
+
+  <!-- Max Width Allowed -->
+  <div class='playingArea playingCards simpleCards'>
+
+    <!-- CSS Playing Cards - Thank you Anika Henke <anika@selfthinker.org> -->
+
+    <!-- Position Player Hand at the Bottom of the Screen-->
+    <div class='playerHand'>
+      <!-- Div to place *ngFor loop in -->
+      <div *ngFor='let card of playerHand'>
+        <!-- Player Hand Goes Here -->
+        <div class='hand hvr-bob'>
+          <ul class='hand'>
+            <li>
+              <span class="card rank-{{card.rank}} {{card.suit}}">
+                <span class="rank">{{card.rank}}</span>
+                <!--club-->
+                <span *ngIf="card.suit=='clubs'" class="suit">&#9827;</span>
+                <!-- spade-->
+                <span *ngIf="card.suit=='spades'" class="suit">&#9824;</span>
+                <!--diamond-->
+                <span *ngIf="card.suit=='diams'" class="suit">&#10070;</span>
+                <!--heart-->
+                <span *ngIf="card.suit=='hearts'" class="suit">&#10086;</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class='dealerHand'>
+      <!-- Div to place *ngFor loop in -->
+      <div *ngFor='let card of dealerHand; let last=last'>
+        <!-- Player Hand Goes Here -->
+        <div class='handx hvr-bob'>
+          <ul class='hand'>
+            <li>
+              <span class="card rank-{{card.rank}} {{card.suit}}">
+                <span class="rank">{{card.rank}}</span>
+                <!--club-->
+                <span *ngIf="card.suit=='clubs'" class="suit">&#9827;</span>
+                <!-- spade-->
+                <span *ngIf="card.suit=='spades'" class="suit">&#9824;</span>
+                <!--diamond-->
+                <span *ngIf="card.suit=='diams'" class="suit">&#10070;</span>
+                <!--heart-->
+                <span *ngIf="card.suit=='hearts'" class="suit">&#10086;</span>
+              </span>
+              <div *ngIf='game.playing'>
+                <div *ngIf='last'>
+                  <div class="card back"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Deck on the side of the screen -->
+    <div class='deck'>
+      <div class="card back hvr-grow"></div>
+    </div>
+
+  </div>
+
+  <mat-card class='hvr-grow-rotate'>
+    <table>
+      <tr>
+        <td>
+          <u>Player Information </u>
+        </td>
+      </tr>
+      <tr>
+        <td>Value of Current Hand: {{game.playerScore}} </td>
+      </tr>
+      <tr>
+        <td>Value of Dealer Hand: {{game.getDealerScore()}}</td>
+      </tr>
+      <tr>
+        <td>
+          Current Bet: ${{game.playerBet}}
+        </td>
+      </tr>
+      <tr>
+        <td>Total Money: ${{game.playerMoney}}</td>
+      </tr>
+    </table>
+  </mat-card>
+
+  <app-chips [purpChips]='game.purpChips' [redChips]='game.redChips' [greenChips]='game.greenChips' [blueChips]='game.blueChips'></app-chips>
+
+  <div class='buttons'>
+    <button mat-fab (click)='nextGame()' matTooltip='New Game' [ngClass]='getNextEmphasis()'>
+      <mat-icon>fiber_new</mat-icon>
+    </button>
+    <button mat-fab matTooltip='Change Bet' (click)='setBet()' [ngClass]='getBetEmphasis()'>
+      <mat-icon>attach_money</mat-icon>
+    </button>
+    <button mat-fab (click)='toPlayerHand()' class='hvr-grow-shadow' matTooltip='Hit Me!'>
+      <mat-icon>touch_app</mat-icon>
+    </button>
+    <button mat-fab matTooltip='Stand'(click)='stand()' class='hvr-grow-shadow'>
+      <mat-icon>not_interested</mat-icon>
+    </button>
+  </div>
+
+</div>
